@@ -39,3 +39,22 @@ body{
   background-size: cover;
 
 }
+
+.second-time{
+  width: 500px;
+  height: 200px;
+  background: rgb(202, 248, 159);
+  position: absolute;
+  border-radius: 15px;
+  top: 0;
+    right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+  text-align-last: center;
+}
+
+.second{
+  color: rgb(90, 201, 0)
+}
