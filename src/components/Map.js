@@ -13,6 +13,19 @@ const mapElement = useRef();
 const [map, setMap] = useState({});
 const [lat, setLat] = useState();
 const [long, setLong] = useState();
+const [timeSec, setTimeSec] = useState(0)
+
+const convertHMS = (value) => {
+  const sec = parseInt(value, 10); // convert value to number if it's string
+  let hours   = Math.floor(sec / 3600); // get hours
+  let minutes = Math.floor((sec - (hours * 3600)) / 60); // get minutes
+  let seconds = sec - (hours * 3600) - (minutes * 60); //  get seconds
+  // add 0 if value < 10; Example: 2 => 02
+  if (hours   < 10) {hours   = "0"+hours;}
+  if (minutes < 10) {minutes = "0"+minutes;}
+  if (seconds < 10) {seconds = "0"+seconds;}
+  setTimeSec(minutes+':'+seconds)
+}
 
 const convertToPoints = (lngLat) => {
   return {
@@ -81,7 +94,7 @@ useEffect(() => {
         const element = document.createElement('div')
         element.className = 'marker'
         const marker = new tt.Marker({
-          draggable: true,
+          draggable: false,
           element: element,
         })
         .setLngLat([longitude, latitude])
@@ -133,8 +146,11 @@ useEffect(() => {
           })
           resultsArray.sort((a, b) => {
             return a.drivingtime - b.drivingtime
+
           })
           const sortedLocations = resultsArray.map((result) => {
+
+            convertHMS(result.drivingtime)
             return result.location
           })
           resolve(sortedLocations)
@@ -160,7 +176,6 @@ useEffect(() => {
 
 
     map.on('click', (e) => {
-      console.log(e.lngLat)
       destinations.push(e.lngLat)
       addDeliveryMarker(e.lngLat, map)
       recalculateRoutes()
@@ -174,6 +189,18 @@ useEffect(() => {
 return (
   <div style={{ width: "100%", height: "100vh" }} className="app">
     <div className="map" ref={mapElement} />
+    {timeSec ? 
+      <div className="second-time">
+        <h3>
+          A localização escolhida fica dá ao total
+          <h2 className="second">{timeSec}</h2> 
+          minutos de distancia
+        </h3>
+      </div> 
+    : 
+    null}
+
+
   </div>
 );
 }
