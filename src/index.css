@@ -63,3 +63,7 @@ body{
 .second{
   color: rgb(90, 201, 0)
 }
+
+.cabecalho{
+    padding: 30px 45px;
+}
