@@ -16,6 +16,11 @@ body{
   width: 100%;
 }
 
+.Rating {
+  font-family: sans-serif;
+  text-align: center;
+}
+
 
 .map{
   width: 100%;
@@ -57,4 +62,8 @@ body{
 
 .second{
   color: rgb(90, 201, 0)
+}
+
+.cabecalho{
+    padding: 30px 45px;
 }
