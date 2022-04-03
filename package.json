@@ -9,6 +9,7 @@
     "@tomtom-international/web-sdk-maps": "^6.18.0",
     "@tomtom-international/web-sdk-plugin-searchbox": "^3.1.12",
     "@tomtom-international/web-sdk-services": "^6.18.0",
+    "json-server": "^0.17.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-rating-stars-component": "^2.2.0",
@@ -20,7 +21,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "backend": "json-server --watch db/db.json"
   },
   "eslintConfig": {
     "extends": [
