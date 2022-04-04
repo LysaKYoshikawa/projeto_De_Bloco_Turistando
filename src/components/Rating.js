@@ -1,12 +1,20 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import ReactStars from "react-rating-stars-component";
+import { Link } from "react-router-dom";
 
 import "./../index"
 
 export default function Rating() {
   return (
     <div className="Rating">
+        <nav class="navbar navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="btn btn-primary" href="http://localhost:3000/turistando" role="button">
+                Turistando - Página Inicial 
+                </a>
+                </div>
+        </nav>
       <h1 class="p-4">Avalie nosso serviço</h1>
       <div class="d-flex justify-content-center">
       <ReactStars
