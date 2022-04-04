@@ -19,6 +19,7 @@ export default () => {
       </div>
 
       <AreaLogin>
+      <h1>Turistando</h1>
         <Link to="https://www.google.com.br/">
           <BtnSocial>
             <GoogleIcon />
@@ -46,7 +47,7 @@ export default () => {
             <input type="password" />
           </div>
 
-          <Link to="/acesso">
+          <Link to="/turistando">
             <BtnGet>Entrar</BtnGet>
           </Link>
         </form>
