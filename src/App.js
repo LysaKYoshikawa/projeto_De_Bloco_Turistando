@@ -2,11 +2,9 @@ import Map from './components/Map'
 import React from 'react'
 import Login from './components/Login'
 import Rating from './components/Rating'
-
 import {
   BrowserRouter as Router,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 import {Switch} from 'react-router'
 

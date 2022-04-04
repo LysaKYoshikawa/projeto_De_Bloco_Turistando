@@ -61,7 +61,32 @@ body{
 }
 
 .second{
-  color: rgb(90, 201, 0)
+  color: rgb(90, 201, 0);
+  font-weight: bold
+}
+
+.poi-box {
+  left: 0;
+  top: 0;
+  z-index: 0;
+  position: absolute;
+}
+
+.nav-bar {
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  position: absolute;
+}
+
+.distance-box {
+  font-weight: 'bold';
+   font-size: '2em'
+}
+
+li {
+  margin-top: 50px;
 }
 
 .cabecalho{
