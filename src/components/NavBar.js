@@ -10,7 +10,6 @@ class NavBar extends React.Component {
         <Navbar bg="light" expand="lg">
             <Container fluid>
             <Nav className="flex-grow-1"></Nav>
-                <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">
                 <Nav
                     className="me-auto my-2 my-lg-0"
@@ -36,6 +35,7 @@ class NavBar extends React.Component {
                         </div>
                     </IconContext.Provider>               
                 </Nav.Link>
+                <Navbar.Toggle aria-controls="navbarScroll" />
             </Container>
         </Navbar>
         )
