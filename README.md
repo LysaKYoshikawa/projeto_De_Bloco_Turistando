@@ -28,7 +28,7 @@ Trata-se de um sistema para auxiliar os turistas na localização de pontos impo
 
 | ID | Descrição | Prioridade |
 |----|-----------|------------| 
-| NF-001 |	O sistema deverá utilizar a API do Google Maps.	| Essencial |
+| NF-001 |	O sistema deverá utilizar APIs do TomTom Maps.	| Essencial |
 | NF-002 |-  USABILIDADE	O sistema deverá ter uma interface capaz de funcionar em diferentes dispositivos, adequando o layout ao tamanho da tela.	| Essencial |
 | NF-003 |- USABILIDADE	O sistema deverá possuir uma interface gráfica intuitiva.	| Essencial |
 | NF-004 |- PERFORMANCE	O usuário poderá salvar seus dados de autenticação para próximos acessos.	| Essencial |
