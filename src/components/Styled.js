@@ -12,14 +12,17 @@ export const BtnGet = styled.button`
   font-weight: bold;
   margin-bottom: 15px;
   transition: 0.4s;
+  background-color: green;
+  color: #ffff;
+  text-align: center;
 
   &:hover {
-    background-color: green;
+    background-color: #3FBF7F;
   }
 
   .center {
     text-align: center;
-    width: 100%;
+    
   }
 `;
 

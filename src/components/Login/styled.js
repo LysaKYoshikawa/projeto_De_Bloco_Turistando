@@ -9,11 +9,12 @@ export const AreaInteira = styled.div`
 `;
 
 export const AreaLogin = styled.div`
+  
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 1.3rem 0;
-  max-width: 300px;
+  max-width: 100px;
   margin: auto;
   margin-top: 20px;
   text-align: center;
@@ -23,6 +24,11 @@ export const AreaLogin = styled.div`
 
   h1 {
     font-size: 24px;
+  }
+
+  img {
+    width: 30vw;
+    height: 50vh;
   }
 
   .ou {
