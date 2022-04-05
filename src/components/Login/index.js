@@ -5,7 +5,7 @@ import { AreaLogin } from "./styled";
 import { AreaInteira } from "./styled";
 import { BtnGet } from "../../components/Styled";
 import { BtnSocial } from "../../components/Styled";
-import logo from "../../img/logo.JPG";
+import logo from "../../img/logo.png";
 import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
 import GoogleIcon from "@mui/icons-material/Google";
 import { Link } from "react-router-dom";
@@ -14,12 +14,13 @@ import { Link } from "react-router-dom";
 export default () => {
   return (
     <AreaInteira>
-      <div>
-        <img src="../../img/logo.JPG" />
-      </div>
+      
 
       <AreaLogin>
-      <h1>Turistando</h1>
+
+      <div>
+        <img src={logo} />
+      </div>
         <Link to="https://www.google.com.br/">
           <BtnSocial>
             <GoogleIcon />
